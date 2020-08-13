@@ -39,12 +39,12 @@ if mods["omnimatter_marathon"] then
 	omni.marathon.exclude_recipe("waste-mutation")
 end
 
-if mods["pycoalprocessing"] then
-	local pylog = {"log1", "log2", "log3", "log4", "log5", "log6", "log-organics", "log-wood"}
-	for _, p in pairs(pylog) do
-		omni.lib.remove_recipe_all_techs(p)
-		data.raw.recipe[p] = nil
-	end
-	omni.lib.remove_recipe_all_techs("botanical-nursery")
-	data.raw.recipe["botanical-nursery"] = nil
-end
+--if mods["pycoalprocessing"] then
+--	local pylog = {"log1", "log2", "log3", "log4", "log5", "log6", "log-organics", "log-wood"}
+--	for _, p in pairs(pylog) do
+--		omni.lib.remove_recipe_all_techs(p)
+--		data.raw.recipe[p] = nil
+--	end
+--	omni.lib.remove_recipe_all_techs("botanical-nursery")
+--	data.raw.recipe["botanical-nursery"] = nil
+--end
